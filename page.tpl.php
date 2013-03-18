@@ -1,14 +1,12 @@
   <div id="wrapper" class="container">
 
-    <?php //echo theme_image(array('path' => $directory . '/untitled.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara', 'class' => 'hide'))); ?>
-
     <div class="span-24">
       <header class="container">
         <div class="large span-14 pull-3">
           <?php echo render($page['header']); ?>
         </div>
 
-        <section id="menus" class="span-10 push-6 last">
+        <div id="menus" class="span-10 push-6 last">
           <nav id="main_menu">
             <ul>
             <?php foreach ($main_menu as $item): ?>
@@ -24,12 +22,12 @@
             <?php endforeach; ?>
             </ul>
           </nav>
-        </section> <!-- menus -->
+        </div> <!-- menus -->
 
       </header>
     </div>
 
-    <div class="container span-24">
+    <div id="middle-content" class="container span-24">
       <section class="main span-24">
 
         <?php if ($messages): ?>
@@ -65,4 +63,4 @@
       <?php echo render($page['footer']); ?>
     </footer>
 
-  </div>
+  </div> <!-- wrapper -->

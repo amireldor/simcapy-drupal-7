@@ -6,6 +6,21 @@ body {
 	font-family: sans-serif;
 }
 
+#capybara-wrapper {
+	position: relative;
+	margin: 0 auto;
+	top: -2em;
+}
+
+#capybara {
+	position: absolute;
+	width: 364px;
+	top: 0;
+	left: 50%;
+	margin-left: -182px;
+	z-index: -100;
+}
+
 #menus {
 	text-align: right;
 	font-weight: bold;
@@ -23,8 +38,15 @@ body {
 	content: "";
 }
 
+#middle-content {
+	margin-top: 6em;
+}
+
 article {
 	margin-bottom: 8em;
+	background: rgba(255, 255, 255, 0.45);
+	border-radius: 10px;
+	padding: 1em;
 }
 
 article .field-name-field-tags {
