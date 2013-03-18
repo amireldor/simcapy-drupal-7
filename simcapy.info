@@ -21,3 +21,5 @@ stylesheets[all][] = style.css
 ; Might use JavaScript
 ; scripts[] = require.js
 ; scripts[] = main.js
+
+; HTML5Shiv scripts are in template.php

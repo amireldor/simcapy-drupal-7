@@ -1,4 +1,49 @@
 body {
-	color: red;
-	background: pink;
+	color: #333;
+	background: #dadada url("gradient.png") repeat-x;
+	margin-top: 2em;
+	margin-bottom: 4em;
+	font-family: sans-serif;
+}
+
+#menus {
+	text-align: right;
+	font-weight: bold;
+}
+
+#menus ul li {
+	display: inline;
+}
+
+#menus ul li:before {
+	content: " // ";
+}
+
+#menus ul li:first-child:before {
+	content: "";
+}
+
+article {
+	margin-bottom: 8em;
+}
+
+article .field-name-field-tags {
+	display: block;
+}
+
+article .field-name-field-tags .field-item {
+	display: inline;
+}
+
+article .field-name-field-tags .field-item:before {
+	content: ", ";
+}
+
+article .field-name-field-tags .field-item:first-child:before {
+	content: "";
+}
+
+footer {
+	text-align: right;
+	font-size: small;
 }
