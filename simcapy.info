@@ -9,11 +9,14 @@ regions[content] = Content
 regions[sidebar] = Sidebar
 regions[footer] = Footer
 
+stylesheets[screen, projection][] = blueprint/screen.css
+stylesheets[print][] = blueprint/print.css
 stylesheets[all][] = style.css
+
+; stylesheets for lt IE 8 are added on template.php
 
 ; Still not implemented, I guess
 ; stylesheets[handheld][] = handheld.css
-; stylesheets[print][] = print.css
 
 ; Might use JavaScript
 ; scripts[] = require.js

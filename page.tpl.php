@@ -1,6 +1,6 @@
   <div id="wrapper">
 
-    <?php echo theme_image(array('path' => $directory . '/untitled.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara'))); ?>
+    <?php echo theme_image(array('path' => $directory . '/untitled.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara', 'class' => 'hide'))); ?>
 
     <header>
       <?php echo render($page['header']); ?>
