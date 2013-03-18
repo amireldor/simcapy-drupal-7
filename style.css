@@ -1,0 +1,107 @@
+body {
+  color: #555;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  margin: 0 2em;
+  padding: 0;
+}
+
+h1, p {
+  margin: 0 0 .8em;
+}
+
+#wrapper {
+  position: relative;
+}
+
+header, img#capybara {
+  padding-top: 2em;
+}
+
+article {
+  margin-top: 3em;
+}
+
+article:first-child {
+  margin-top: 0;
+}
+
+article header time {
+  display: block;
+}
+
+ul li.leaf {
+  list-style: disc;
+}
+
+img#capybara {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -100;
+}
+
+footer {
+  clear: both;
+  font-size: .8em;
+  text-align: center;
+}
+
+#main_menu {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  font-weight: bold;
+  z-index: 10; /* Just to make sure */
+}
+
+#main_menu ul {
+  list-style: none;
+}
+
+#main_menu ul li {
+  display: inline;
+}
+
+#main_menu ul li:before {
+  content: ' // ';
+}
+
+#main_menu ul li:first-child:before {
+  content: '';
+}
+
+#main_menu a {
+  text-decoration: none;
+}
+
+#content {
+  margin: 1em 0;
+}
+
+section.main .region {
+  float: left;
+}
+
+.region-content {
+  margin-right: 382px;
+}
+
+.region-sidebar {
+  margin-top: 382px;
+  margin-left: -372px;
+  width: 372px;
+}
+
+#secondary_menu {
+  clear: both;
+}
+
+#search-block-form {
+  margin-bottom: .2em;
+}
+
+.profile {
+  clear: none; /* Overriding some Drupal core CSS on user's page */
+}
