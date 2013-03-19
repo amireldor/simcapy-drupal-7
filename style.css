@@ -73,3 +73,18 @@ footer {
 	text-align: right;
 	font-size: small;
 }
+
+.view-popular-tags ul {
+	list-style-type: none;
+}
+
+.view-popular-tags ul li {
+	padding: .4em;
+	padding-left: 4em;
+	margin: .4em 0;
+}
+
+.view-popular-tags ul li.views-row-odd {
+	background: rgba(255, 255, 255, 0.45);
+	border-radius: 10px;
+}
