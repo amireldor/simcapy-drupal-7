@@ -80,8 +80,11 @@ footer {
 
 .view-popular-tags ul li {
 	padding: .4em;
-	padding-left: 4em;
 	margin: .4em 0;
+}
+
+.view-display-id-page.view-popular-tags ul li {
+	padding-left: 4em;
 }
 
 .view-popular-tags ul li.views-row-odd {
