@@ -2,11 +2,11 @@
 
     <div class="span-24">
       <header class="container">
-        <div class="large span-14 pull-3">
+        <div class="large span-14">
           <?php echo render($page['header']); ?>
         </div>
 
-        <div id="menus" class="span-10 push-6 last">
+        <div id="menus" class="span-10 last">
           <nav id="main_menu">
             <ul>
             <?php foreach ($main_menu as $item): ?>
