@@ -2,7 +2,7 @@
 
     <div class="span-24">
       <header class="container">
-        <div class="large span-14">
+        <div class="span-14">
           <?php echo render($page['header']); ?>
         </div>
 
