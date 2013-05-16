@@ -4,4 +4,4 @@ Simcapy uses [blueprint][blueprint]'s typography CSS, [normalize.css][normalize.
 
 [blueprint]: http://www.blueprintcss.org/ 
 [normalize.css]: https://github.com/necolas/normalize.css
-[unsemantic]: ahttp://unsemantic.com/
+[unsemantic]: http://unsemantic.com/
