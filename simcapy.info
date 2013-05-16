@@ -1,7 +1,7 @@
 name = Simcapy
 description = A simple caypbara theme
 
-version = 3.0-alpha
+version = 3.0-beta
 core = 7.x
 
 regions[header] = Header
