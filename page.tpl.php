@@ -1,3 +1,7 @@
+  <div id="capybara-wrapper">
+    <?php echo theme_image(array('path' => $directory . '/transparent-capybara.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara'))); ?>
+  </div>
+
   <div id="wrapper" class="grid-container">
 
     <div class="grid-100">
@@ -6,7 +10,7 @@
           <?php if ($page['header']): ?>
             <?php echo render($page['header']); ?>
           <?php else: ?>
-            <h1><?php echo $site_name ?> </h1>
+            <h1><a href="<?php echo $front_page; ?>"><?php echo $site_name ?></a></h1>
           <?php endif;?>
         </div>
 
@@ -32,28 +36,37 @@
     </div>
 
     <div id="middle-content" class="grid-100">
+
+      <?php if ($messages): ?>
+        <div id="messages">
+          <?php echo $messages; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if ($breadcrumb): ?>
+        <nav class="breadcrumb">
+          <?php echo $breadcrumb; ?>
+        </nav>
+      <?php endif; ?>
+
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
+
       <section class="main">
-
-        <?php if ($messages): ?>
-          <div id="messages">
-            <?php echo $messages; ?>
-          </div>
-        <?php endif; ?>
-
-        <?php if ($breadcrumb): ?>
-          <div class="breadcrumb">
-            <?php print render($breadcrumb); ?>
-          </div>
-        <?php endif; ?>
-
-        <?php if ($is_admin && $tabs): ?>
-          <div class="tabs">
-            <?php print render($tabs); ?>
-          </div>
-        <?php endif; ?>
-
         <div class="grid-70">
+          <?php echo render($page['highlighted']); ?>
+          <?php echo render($title_prefix); ?>
+          <?php if ($title): ?><h1><?php echo $title; ?></h1><?php endif; ?>
+          <?php echo render($title_suffix); ?>
+          <?php echo render($page['help']); ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links"><?php echo render($action_links); ?></ul>
+          <?php endif; ?>
           <?php echo render($page['content']); ?>
+          <div class="feed-icons"><?php echo $feed_icons; ?></div>
         </div>
 
         <div class="grid-30">
