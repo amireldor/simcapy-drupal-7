@@ -1,7 +1,7 @@
 name = Simcapy
 description = A simple caypbara theme
 
-version = 2.0-beta
+version = 3.0-alpha
 core = 7.x
 
 regions[header] = Header
@@ -9,14 +9,12 @@ regions[content] = Content
 regions[sidebar] = Sidebar
 regions[footer] = Footer
 
-stylesheets[screen, projection][] = blueprint/screen.css
-stylesheets[print][] = blueprint/print.css
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/unsemantic-grid-responsive-tablet.css
 stylesheets[all][] = style.css
 
-; stylesheets for lt IE 8 are added on template.php
-
-; Still not implemented, I guess
-; stylesheets[handheld][] = handheld.css
+; stylesheets for lt IE 9 are added on template.php
 
 ; Might use JavaScript
 ; scripts[] = require.js

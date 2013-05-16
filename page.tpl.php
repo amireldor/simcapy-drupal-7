@@ -1,12 +1,16 @@
-  <div id="wrapper" class="container">
+  <div id="wrapper" class="grid-container">
 
-    <div class="span-24">
-      <header class="container">
-        <div class="span-14">
-          <?php echo render($page['header']); ?>
+    <div class="grid-100">
+      <header>
+        <div class="grid-60">
+          <?php if ($page['header']): ?>
+            <?php echo render($page['header']); ?>
+          <?php else: ?>
+            <h1><?php echo $site_name ?> </h1>
+          <?php endif;?>
         </div>
 
-        <div id="menus" class="span-10 last">
+        <div id="menus" class="grid-40">
           <nav id="main_menu">
             <ul>
             <?php foreach ($main_menu as $item): ?>
@@ -27,8 +31,8 @@
       </header>
     </div>
 
-    <div id="middle-content" class="container span-24">
-      <section class="main span-24">
+    <div id="middle-content" class="grid-100">
+      <section class="main">
 
         <?php if ($messages): ?>
           <div id="messages">
@@ -48,18 +52,18 @@
           </div>
         <?php endif; ?>
 
-        <div class="span-18 append-2">
+        <div class="grid-70">
           <?php echo render($page['content']); ?>
         </div>
 
-        <div class="span-4 last">
+        <div class="grid-30">
           <?php echo render($page['sidebar']); ?>
         </div>
 
       </section> <!-- main -->
     </div>
 
-    <footer class="span-24">
+    <footer class="grid-100">
       <?php echo render($page['footer']); ?>
     </footer>
 
