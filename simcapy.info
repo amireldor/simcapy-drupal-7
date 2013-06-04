@@ -10,7 +10,6 @@ regions[sidebar] = Sidebar
 regions[footer] = Footer
 
 stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/typography.css
 stylesheets[all][] = css/unsemantic-grid-responsive-tablet.css
 stylesheets[all][] = style.css
 
