@@ -3,7 +3,7 @@ body {
 	background: #dadada url("gradient.png") repeat-x;
 	margin-top: 2em;
 	margin-bottom: 4em;
-	font-family: sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 120%;
 	line-height: 1.3em;
 }
