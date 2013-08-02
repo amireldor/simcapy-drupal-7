@@ -11,7 +11,7 @@
     <time datetime="<?php echo date('c', $created); ?>" pubdate="pubdate"><?php echo $date ?></time>
     <?php endif; ?>
 
-    <?php if ($node->changed != $node->created): ?>
+    <?php if ($node->changed != $node->created and !$is_front): ?>
     <time datetime="<?php echo date('c', $changed); ?>">Updated - <?php echo format_date($node->changed); ?></time>
     <?php endif;?>
   </header> <!-- information -->
